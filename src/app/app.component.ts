@@ -11,6 +11,8 @@ export class AppComponent {
 
   }
 
+  checked: boolean =false;
+
   title = 'app works!';
 
   states = ['Delhi', 'Karnataka', 'Tamilnadu'];
@@ -20,6 +22,7 @@ export class AppComponent {
     //   duration: 1000
     // });
 
-    this.snackBar.open("Hello how are you",undefined, {duration: 2000});
+let text = this.checked? "You have checked me": "You did not check me";
+    this.snackBar.open(text,undefined, {duration: 2000});
   }
 }
