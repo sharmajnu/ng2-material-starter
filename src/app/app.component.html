@@ -1,3 +1,36 @@
 <h1>
-  {{title}}
+  Hello angualr 2 with material design
 </h1>
+
+<md-list>
+  <md-list-item> Pepper </md-list-item>
+  <md-list-item> Salt </md-list-item>
+  <md-list-item> Paprika </md-list-item>
+</md-list>
+
+<md-tab-group>
+  <md-tab>
+    <ng-template md-tab-label>
+      The <em>best</em> pasta
+    </ng-template>
+    <h1>Best pasta restaurants</h1>
+    <p>...</p>
+  </md-tab>
+  <md-tab>
+    <ng-template md-tab-label>
+      The worst sushi
+    </ng-template>
+    <md-select placeholder="State">
+      <md-option *ngFor="let state of states" [value]="state">{{ state }}</md-option>
+    </md-select>
+    <p>...</p>
+  </md-tab>
+
+</md-tab-group>
+<button md-button (click)="openSnackBar()">Hello button</button>
+
+<md-chip-list>
+  <md-chip>Papadum</md-chip>
+  <md-chip>Naan</md-chip>
+  <md-chip>Dal</md-chip>
+</md-chip-list>
